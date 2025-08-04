@@ -10,17 +10,17 @@ const Events = () => {
       title: 'SZIN',
       artist: 'Czuckor & Blues Bell',
       time: '18:00',
-      type: 'DJ Set',
+      type: 'Élő Zene',
       description: 'Klasszikusok'
     },
     {
-      date: '2025-01-18',
-      day: 'Szombat',
-      title: 'Live Jazz Night',
-      artist: 'Szeged Jazz Trio',
-      time: '21:00',
-      type: 'Élő Zene',
-      description: 'Intim jazz hangulat a víz mellett'
+      date: '2023-08-25',
+      day: 'Péntek',
+      title: 'Szin + Kökény',
+      artist: 'Kökény Attila & AV Acoustic & Frederik Cornelius Quartett',
+      time: '18:00',
+      type: 'Quartet',
+      description: 'Jazz hangulat a víz mellett'
     },
     {
       date: '2025-01-22',
@@ -32,13 +32,13 @@ const Events = () => {
       description: 'Lágy hangzások és énekelt dallamok'
     },
     {
-      date: '2025-01-25',
-      day: 'Szombat',
-      title: 'Weekend Vibes',
-      artist: 'DJ Luna',
-      time: '22:00',
-      type: 'DJ Set',
-      description: 'Hétvégi bulihangulat'
+      date: '2023-08-24',
+      day: 'Csütörtök',
+      title: 'Szilárd Piano Projekt',
+      artist: 'Rambling Blues & Szilárd Piano Projekt & Myra Monoka Feat. Pulius Tibi',
+      time: '18:00',
+      type: 'Élő zene',
+      description: 'Csütörtöki bulihangulat'
     }
   ];
 
