@@ -5,13 +5,13 @@ import ScrollAnimation from './ScrollAnimations';
 const Events = () => {
   const events = [
     {
-      date: '2025-01-15',
-      day: 'Szerda',
-      title: 'DJ Sunset Sessions',
-      artist: 'DJ Marcus',
-      time: '20:00',
+      date: '2023-08-28',
+      day: 'Szombat',
+      title: 'SZIN',
+      artist: 'Czuckor & Blues Bell',
+      time: '18:00',
       type: 'DJ Set',
-      description: 'Elektronikus zenék a Tisza partján'
+      description: 'Klasszikusok'
     },
     {
       date: '2025-01-18',
