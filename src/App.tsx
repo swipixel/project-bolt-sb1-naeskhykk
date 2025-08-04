@@ -20,7 +20,7 @@ function App() {
         <Menu />
         <Events />
         {/*<LiveDock /> */}
-        <SpotifySection />
+        {/*<SpotifySection />*/}
         <Reservation />
         <Footer />
       </div>
