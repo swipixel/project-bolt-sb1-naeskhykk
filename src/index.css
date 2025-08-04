@@ -308,23 +308,44 @@
   .stagger-5 { transition-delay: 0.5s; }
   .stagger-6 { transition-delay: 0.6s; }
 
-  
-  /* App Background with Overlay */
-  .app-background {
+  /* App Backgrounds with Overlay */
+  .app-background-base {
     position: relative;
-    background-image: url('/Image/bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
-  .app-background::before {
+  .app-background-base::before {
     content: '';
     position: absolute;
     inset: 0;
     background-color: rgba(8, 17, 26, 0.7); /* rich-black with 70% opacity */
     z-index: -1;
   }
+
+  .app-background-default {
+    @extend .app-background-base;
+    background-image: url('/Image/bg.jpg');
+  }
+
+  .app-background-sunset {
+    @extend .app-background-base;
+    background-image: url('/Image/sunset-5952392_1280.jpg');
+  }
+
+  .app-background-river {
+    @extend .app-background-base;
+    background-image: url('/Image/river-tisza-4197767_1280.jpg');
+  }
+
+  /* You can add more classes here for other images */
+  /*
+  .app-background-another-image {
+    @extend .app-background-base;
+    background-image: url('/Image/another-image.jpg');
+  }
+  */
 }
 
 @layer utilities {
