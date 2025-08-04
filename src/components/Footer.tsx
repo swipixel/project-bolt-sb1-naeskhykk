@@ -51,8 +51,8 @@ const Footer = () => {
                 <div className="flex items-start space-x-3">
                   <MapPin className="text-reseda-green w-5 h-5 mt-0.5 icon-float" />
                   <div className="text-ecru/70 text-sm">
-                    <p>6720 Szeged</p>
-                    <p>Tisza part 15.</p>
+                    <p>Szeged 6726 </p>
+                    <p>Közép Kikötő sor</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
