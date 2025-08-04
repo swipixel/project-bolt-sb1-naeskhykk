@@ -17,7 +17,7 @@ const Events = () => {
       date: '2023-08-25',
       day: 'Péntek',
       title: 'Szin + Kökény',
-      artist: 'Kökény Attila & AV Acoustic & Frederik Cornelius Quartett',
+      artist: 'Kökény Attila',
       time: '18:00',
       type: 'Quartet',
       description: 'Jazz hangulat a víz mellett'
@@ -35,7 +35,7 @@ const Events = () => {
       date: '2023-08-24',
       day: 'Csütörtök',
       title: 'Szilárd Piano Projekt',
-      artist: 'Rambling Blues & Szilárd Piano Projekt & Myra Monoka Feat. Pulius Tibi',
+      artist: 'Szilárd Piano Projekt & Myra Monoka',
       time: '18:00',
       type: 'Élő zene',
       description: 'Csütörtöki bulihangulat'
