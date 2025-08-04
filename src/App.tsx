@@ -13,15 +13,16 @@ import Footer from './components/Footer';
 function App() {
   return (
     <AnimationProvider>
-      <div className="app-background text-ecru">
+      <div className="min-h-screen app-background text-ecru">
         <CustomCursor />
         <Header />
-        <Hero />
-        <Menu />
-        <Events />
-        {/*<LiveDock /> */}
-        <Reservation />
-        {/*<SpotifySection />*/}
+        <main className="relative z-10">
+          <Hero />
+          <Menu />
+          <Events />
+          <Reservation />
+          <SpotifySection />
+        </main>
         <Footer />
       </div>
     </AnimationProvider>
