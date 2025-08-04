@@ -45,7 +45,7 @@ const Reservation = () => {
       <div className="container mx-auto px-6">
         <ScrollAnimation animation="fade-in-up">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-ecru mb-4 text-shadow">Asztal Foglalása</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-ecru mb-4 text-shadow">Foglalása</h2>
             <p className="text-xl text-ecru/80 max-w-2xl mx-auto">
               Biztosítsd helyedet a Tisza legszebb panorámájával
             </p>
