@@ -20,8 +20,8 @@ function App() {
           <Hero />
           <Menu />
           <Events />
-          {/*<Reservation />*/}
-          <SpotifySection />
+          <Reservation />
+          {/*<SpotifySection />*/}
         </main>
         <Footer />
       </div>
