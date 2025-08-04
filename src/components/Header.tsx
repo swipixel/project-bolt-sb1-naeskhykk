@@ -36,6 +36,7 @@ const Header = () => {
             <div className="text-2xl font-bold text-ecru">
             Garden Stég <span className="text-reseda-green">Szeged</span>
             </div>
+            <img src="/Image/logo.jpg" />
           </ScrollAnimation>
           
           {/* Desktop Menu */}
