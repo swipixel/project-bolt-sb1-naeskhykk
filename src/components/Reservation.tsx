@@ -16,9 +16,28 @@ const Reservation = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+    const serviceId = 'service_ho5jmhm';
+    const templateId = 'template_96o9whf';
+    const userId = 'YOUR_USER_ID';
+  
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
+
+    // Send the email using EmailJS
+    emailjs.send(serviceId, templateId, formData, userId)
+      .then((response) => {
+        console.log('Message sent successfully', response);
+        // You can clear the form after successful submission if needed
+        setFormData({
+          name: '',
+          email: '',
+          message: '',
+        });
+      })
+      .catch((error) => {
+        console.error('Failed to send message', error);
+      });
+  };
     console.log('Reservation submitted:', formData);
   };
 
