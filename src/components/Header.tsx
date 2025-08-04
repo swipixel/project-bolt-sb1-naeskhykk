@@ -33,7 +33,7 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <ScrollAnimation animation="fade-in-left flex">
-            <img src="/Image/logo.jpg" className="h-11 me-2"/>
+            <img src="/Image/logo.jpg" className="h-11 me-10"/>
             <div className="text-2xl font-bold text-ecru">
             Garden Stég <span className="text-reseda-green">Szeged</span>
             </div>
