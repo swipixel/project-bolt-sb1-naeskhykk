@@ -14,8 +14,25 @@ const LiveDock = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // Effect to load the Windy.com webcam player script
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://webcams.windy.com/webcams/public/embed/v2/script/player.js';
+    script.async = true;
+    script.type = 'text/javascript';
+    document.body.appendChild(script);
+
+    return () => {
+      // Clean up the script when the component unmounts
+      document.body.removeChild(script);
+    };
+  }, []); // Empty dependency array ensures this runs only once on mount
+
   const handleRefresh = () => {
     setIsRefreshing(true);
+    // Note: This will only animate the refresh icon.
+    // A true refresh of the Windy.com player would require
+    // a specific method from their embed API, if available.
     setTimeout(() => setIsRefreshing(false), 1000);
   };
 
@@ -34,43 +51,48 @@ const LiveDock = () => {
         <div className="max-w-4xl mx-auto">
           <ScrollAnimation animation="scale-in" delay={200}>
             <div className="relative glass-panel rounded-lg overflow-hidden">
-            {/* Mock Live Camera Feed */}
-            <div className="relative aspect-video bg-gradient-to-br from-rich-black via-raisin-black to-reseda-green/20 parallax-fast">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                  <Camera className="w-16 h-16 text-reseda-green mx-auto mb-4 icon-pulse" />
-                  <p className="text-ecru text-lg mb-2">Élő kamera</p>
-                  <p className="text-ecru/70">Tisza part • Garden Stég Szeged</p>
-                </div>
-              </div>
-              
-              {/* Mock water animation overlay */}
-              <div className="absolute inset-0 water-shimmer opacity-30"></div>
-            </div>
-
-            {/* Camera Controls */}
-            <div className="p-4 glass-panel border-t border-reseda-green/20">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-4">
-                  <div className="flex items-center space-x-2">
-                    <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-                    <span className="text-ecru text-sm font-medium">ÉLŐ</span>
-                  </div>
-                  <div className="text-ecru/70 text-sm">
-                    {currentTime.toLocaleString('hu-HU')}
-                  </div>
-                </div>
-                
-                <button
-                  onClick={handleRefresh}
-                  className="flex items-center space-x-2 px-4 py-2 glass-panel text-reseda-green rounded-lg btn-pulse hover:bg-reseda-green hover:text-rich-black"
-                  disabled={isRefreshing}
+              {/* Windy.com Webcam Embed */}
+              <div className="relative aspect-video"> {/* Use aspect-video for consistent sizing */}
+                <a
+                  name="windy-webcam-timelapse-player"
+                  data-id="1636823877"
+                  data-play="day"
+                  data-loop="0"
+                  data-auto-play="0"
+                  data-force-full-screen-on-overlay-play="0"
+                  data-interactive="1"
+                  href="https://windy.com/webcams/1636823877"
+                  target="_blank"
+                  rel="noopener noreferrer" // Added for security best practices
+                  style={{ display: 'block', width: '100%', height: '100%' }} // Ensure the link fills its container
                 >
-                  <RefreshCw className={`w-4 h-4 ${isRefreshing ? 'animate-spin' : ''}`} />
-                  <span className="text-sm">Frissítés</span>
-                </button>
+                  Szeged
+                </a>
               </div>
-            </div>
+
+              {/* Camera Controls */}
+              <div className="p-4 glass-panel border-t border-reseda-green/20">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-4">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+                      <span className="text-ecru text-sm font-medium">ÉLŐ</span>
+                    </div>
+                    <div className="text-ecru/70 text-sm">
+                      {currentTime.toLocaleString('hu-HU')}
+                    </div>
+                  </div>
+                  
+                  <button
+                    onClick={handleRefresh}
+                    className="flex items-center space-x-2 px-4 py-2 glass-panel text-reseda-green rounded-lg btn-pulse hover:bg-reseda-green hover:text-rich-black"
+                    disabled={isRefreshing}
+                  >
+                    <RefreshCw className={`w-4 h-4 ${isRefreshing ? 'animate-spin' : ''}`} />
+                    <span className="text-sm">Frissítés</span>
+                  </button>
+                </div>
+              </div>
             </div>
           </ScrollAnimation>
 
