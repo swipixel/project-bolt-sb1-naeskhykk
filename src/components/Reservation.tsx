@@ -126,6 +126,7 @@ const Reservation = () => {
                       type="date"
                       id="date"
                       name="date"
+                      lang="hu"
                       required
                       value={formData.date}
                       onChange={handleInputChange}
