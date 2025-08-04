@@ -20,7 +20,7 @@ const Header = () => {
     { href: '#menu', label: 'Menü' },
     { href: '#events', label: 'Események' },
     // { href: '#dock', label: 'Élő Kamera' },
-    { href: '#music', label: 'Zene' },
+    //{ href: '#music', label: 'Zene' },
     { href: '#reservation', label: 'Foglalás' },
   ];
 
