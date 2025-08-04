@@ -33,10 +33,7 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <ScrollAnimation animation="fade-in-left">
-            <div className="text-2xl font-bold text-ecru">
-            Garden Stég <span className="text-reseda-green">Szeged</span>
-            </div>
-            <img src="/Image/logo.jpg" />
+            <img src="/Image/logo.jpg" height="100%"/>
           </ScrollAnimation>
           
           {/* Desktop Menu */}
