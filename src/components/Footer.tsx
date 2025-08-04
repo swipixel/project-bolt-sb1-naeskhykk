@@ -20,10 +20,10 @@ const Footer = () => {
                 felejthetetlen hangulat a víz mellett.
               </p>
               <div className="flex space-x-4">
-                <a href="#" className="text-reseda-green hover:text-ecru transition-all duration-300 btn-pulse p-2 rounded-lg">
+                <a href="https://www.facebook.com/gardensteg/" className="text-reseda-green hover:text-ecru transition-all duration-300 btn-pulse p-2 rounded-lg">
                   <Facebook className="w-6 h-6 icon-float" />
                 </a>
-                <a href="#" className="text-reseda-green hover:text-ecru transition-all duration-300 btn-pulse p-2 rounded-lg">
+                <a href="https://www.instagram.com/gardensteg" className="text-reseda-green hover:text-ecru transition-all duration-300 btn-pulse p-2 rounded-lg">
                   <Instagram className="w-6 h-6 icon-pulse" />
                 </a>
               </div>
