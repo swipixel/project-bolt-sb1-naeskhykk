@@ -4,7 +4,7 @@ import ScrollAnimation from './ScrollAnimations';
 
 const SpotifySection = () => {
   return (
-    <section id="music" className="py-20 bg-rich-black parallax-slow">
+    <section id="music" className="py-20 bg-rich-black parallax-medium">
       <div className="container mx-auto px-6">
         <ScrollAnimation animation="fade-in-up">
           <div className="text-center mb-16">
