@@ -23,13 +23,13 @@ const Events = () => {
       description: 'Jazz hangulat a víz mellett'
     },
     {
-      date: '2025-01-22',
-      day: 'Szerda',
-      title: 'Acoustic Evening',
+      date: '2023-08-11',
+      day: 'Péntek',
+      title: 'Latin Táncest',
       artist: 'Anna & The River Band',
-      time: '19:30',
-      type: 'Akusztik',
-      description: 'Lágy hangzások és énekelt dallamok'
+      time: '20:30',
+      type: 'Tánc',
+      description: 'Salsa, Bachata, Zumba'
     },
     {
       date: '2023-08-24',
