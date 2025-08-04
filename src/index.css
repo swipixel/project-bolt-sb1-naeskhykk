@@ -307,6 +307,23 @@
   .stagger-4 { transition-delay: 0.4s; }
   .stagger-5 { transition-delay: 0.5s; }
   .stagger-6 { transition-delay: 0.6s; }
+
+  /* App Background with Overlay */
+  .app-background {
+    position: relative;
+    background-image: url('/Image/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .app-background::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(8, 17, 26, 0.7); /* rich-black with 70% opacity */
+    z-index: -1;
+  }
 }
 
 @layer utilities {
