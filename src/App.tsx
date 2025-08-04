@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <AnimationProvider>
-      <div className="bg-rich-black text-ecru">
+      <div className="app-background text-ecru">
         <CustomCursor />
         <Header />
         <Hero />
