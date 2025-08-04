@@ -19,7 +19,7 @@ function App() {
         <Hero />
         <Menu />
         <Events />
-        <LiveDock />
+        {/*<LiveDock /> */}
         <SpotifySection />
         <Reservation />
         <Footer />
