@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Calendar, Clock, Users, Phone, Mail } from 'lucide-react';
 import ScrollAnimation from './ScrollAnimations';
+import emailjs from '@emailjs/browser';
 
 const Reservation = () => {
   const [formData, setFormData] = useState({
