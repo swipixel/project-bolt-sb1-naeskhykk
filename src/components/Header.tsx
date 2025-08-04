@@ -32,7 +32,7 @@ const Header = () => {
     } ${scrollY > 100 && !isScrollingUp ? 'nav-slide-down' : 'nav-slide-down visible'}`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <ScrollAnimation animation="fade-in-left flex-row">
+          <ScrollAnimation animation="fade-in-left flex">
             <img src="/Image/logo.jpg" className="h-11"/>
             <div className="text-2xl font-bold text-ecru">
             Garden Stég <span className="text-reseda-green">Szeged</span>
