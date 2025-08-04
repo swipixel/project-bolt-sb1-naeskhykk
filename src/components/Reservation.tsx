@@ -214,9 +214,10 @@ const Reservation = () => {
                   <Calendar className="text-reseda-green w-5 h-5 mt-1 icon-rotate" />
                   <div className="text-ecru">
                     <p className="font-medium mb-1">Nyitvatartás:</p>
-                    <p className="text-sm text-ecru/70">Hétfő - Csütörtök: 16:00 - 24:00</p>
-                    <p className="text-sm text-ecru/70">Péntek - Szombat: 16:00 - 02:00</p>
-                    <p className="text-sm text-ecru/70">Vasárnap: 16:00 - 23:00</p>
+                    <p className="text-sm text-ecru/70">Hétfő - Csütörtök: 15:00 - 22:00</p>
+                    <p className="text-sm text-ecru/70">Péntek: 15:00 - 23:00</p>
+                    <p className="text-sm text-ecru/70">Szombat: 12:00 - 23:00</p>
+                    <p className="text-sm text-ecru/70">Vasárnap: 12:00 - 21:30</p>
                   </div>
                 </div>
               </div>
