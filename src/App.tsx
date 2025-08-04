@@ -22,7 +22,7 @@
          {/*<LiveDock /> */}
 -        <SpotifySection />
          <Reservation />
-+        {//<SpotifySection />}
++        {/*<SpotifySection />*/}
          <Footer />
        </div>
      </AnimationProvider>
