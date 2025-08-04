@@ -33,7 +33,7 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <ScrollAnimation animation="fade-in-left">
-            <img src="/Image/logo.jpg" className="h-10"/>
+            <img src="/Image/logo.jpg" className="h-15"/>
           </ScrollAnimation>
           
           {/* Desktop Menu */}
