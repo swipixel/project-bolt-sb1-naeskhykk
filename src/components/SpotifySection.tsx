@@ -4,7 +4,7 @@ import ScrollAnimation from './ScrollAnimations';
 
 const SpotifySection = () => {
   return (
-    <section id="music" className="py-20 bg-rich-black parallax-medium">
+    <section id="music" className="py-20 bg-rich-black-2 relative z-10">
       <div className="container mx-auto px-6">
         <ScrollAnimation animation="fade-in-up">
           <div className="text-center mb-16">
@@ -19,7 +19,7 @@ const SpotifySection = () => {
           <ScrollAnimation animation="scale-in" delay={200}>
             <div className="glass-panel rounded-lg overflow-hidden">
             {/* Mock Spotify Player */}
-            <div className="aspect-[4/3] bg-gradient-to-br from-green-900/20 via-raisin-black to-rich-black relative parallax-medium">
+            <div className="aspect-[4/3] bg-gradient-to-br from-green-900/20 via-raisin-black to-rich-black relative">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
                   <div className="w-24 h-24 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-6 glass-panel icon-pulse">

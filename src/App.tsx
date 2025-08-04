@@ -20,8 +20,8 @@ function App() {
         <Menu />
         <Events />
         {/*<LiveDock /> */}
-        <Reservation /> {/* Ensure Reservation is here */}
-        <SpotifySection /> {/* Ensure SpotifySection is here, after Reservation */}
+        <Reservation />
+        <SpotifySection />
         <Footer />
       </div>
     </AnimationProvider>

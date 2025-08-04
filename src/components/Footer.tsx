@@ -4,7 +4,7 @@ import ScrollAnimation from './ScrollAnimations';
 
 const Footer = () => {
   return (
-    <footer className="glass-panel border-t border-reseda-green/20">
+    <footer className="glass-panel border-t border-reseda-green/20 relative z-20 mt-0">
       <div className="container mx-auto px-6 py-12">
         {/* Main footer content */}
         <div>
