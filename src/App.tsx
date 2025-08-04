@@ -21,7 +21,7 @@ function App() {
         <Events />
         {/*<LiveDock /> */}
         <Reservation />
-        <SpotifySection />
+        {/*<SpotifySection />*/}
         <Footer />
       </div>
     </AnimationProvider>
