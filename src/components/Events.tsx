@@ -35,7 +35,7 @@ const Events = () => {
       date: '2023-08-24',
       day: 'Csütörtök',
       title: 'Szilárd Piano Projekt',
-      artist: 'Szilárd Piano Projekt & Myra Monoka',
+      artist: 'Szilárd Piano & Myra Monoka',
       time: '18:00',
       type: 'Élő zene',
       description: 'Csütörtöki bulihangulat'
