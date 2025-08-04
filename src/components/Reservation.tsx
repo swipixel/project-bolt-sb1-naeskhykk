@@ -37,7 +37,6 @@ const Reservation = () => {
       .catch((error) => {
         console.error('Failed to send message', error);
       });
-  };
     console.log('Reservation submitted:', formData);
   };
 
