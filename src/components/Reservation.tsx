@@ -110,7 +110,7 @@ const Reservation = () => {
                       value={formData.phone}
                       onChange={handleInputChange}
                       className="w-full pl-12 pr-4 py-3 glass-panel border border-reseda-green/30 rounded-lg text-ecru placeholder-ecru/50 focus:border-reseda-green focus:outline-none transition-all duration-300"
-                      placeholder="+36 30 123 4567"
+                      placeholder="+36 70 605 0070"
                     />
                   </div>
                 </div>
