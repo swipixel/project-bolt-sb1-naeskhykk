@@ -42,7 +42,7 @@ const Reservation = () => {
   };
 
   return (
-    <section id="reservation" className="py-20 bg-rich-black-2 relative z-20">
+    <section id="reservation" className="py-20 bg-rich-black relative z-20">
       <div className="container mx-auto px-6">
         <ScrollAnimation animation="fade-in-up">
           <div className="text-center mb-16">

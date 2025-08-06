@@ -21,7 +21,7 @@ function App() {
           <Menu />
           <Events />
           <Reservation />
-          {/*<SpotifySection />*/}
+          <SpotifySection />
         </main>
         <Footer />
       </div>
